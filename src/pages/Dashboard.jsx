@@ -1,5 +1,5 @@
 import sum from "lodash/sum";
-import moment from "moment";
+import dayjs from "dayjs";
 
 import {
   LineChart,
@@ -22,7 +22,7 @@ export default function Dashboard() {
   const numbers = [10, 20, 30, 40];
 
   const total = sum(numbers);
-  const currentDate = moment().format("YYYY-MM-DD");
+  const currentDate = dayjs().format("YYYY-MM-DD");
 
   return (
     <div style={{ padding: "40px" }}>

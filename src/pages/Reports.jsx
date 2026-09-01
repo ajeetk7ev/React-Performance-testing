@@ -1,21 +1,22 @@
-import moment from "moment";
+import dayjs from "dayjs";
+
 
 export default function Reports() {
   const reports = [
     {
       id: 1,
       name: "Monthly Revenue",
-      date: moment().subtract(1, "month").format("YYYY-MM-DD"),
+      date: dayjs().subtract(1, "month").format("YYYY-MM-DD"),
     },
     {
       id: 2,
       name: "User Growth",
-      date: moment().subtract(2, "month").format("YYYY-MM-DD"),
+      date: dayjs().subtract(2, "month").format("YYYY-MM-DD"),
     },
     {
       id: 3,
       name: "Performance Report",
-      date: moment().subtract(3, "month").format("YYYY-MM-DD"),
+      date: dayjs().subtract(3, "month").format("YYYY-MM-DD"),
     },
   ];
 

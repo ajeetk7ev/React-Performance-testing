@@ -1,4 +1,5 @@
-import moment from "moment";
+import dayjs from "dayjs";
+
 
 import {
   BarChart,
@@ -18,7 +19,7 @@ const data = [
 ];
 
 export default function Analytics() {
-  const generatedAt = moment().format(
+  const generatedAt = dayjs().format(
     "YYYY-MM-DD HH:mm:ss"
   );
 
